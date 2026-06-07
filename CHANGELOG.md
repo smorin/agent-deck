@@ -13,6 +13,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Cross-tool fork parity (Claude / OpenCode / Pi / Codex)**. Forking now works consistently across Claude, OpenCode, Pi, and Codex (and Codex-compatible custom tools) from the TUI, CLI (`agent-deck session fork <id>`), and Web UI, routed through one shared tool-specific dispatcher. Adds Codex session forking (`codex fork <session-id>`), OpenCode CLI fork + worktree support, and Web fork affordances driven by backend forkability instead of hardcoded Claude checks.
 - **Fork quality + safety hardening**. `Shift+F` honors `[fork].branch_prefix`; OpenCode/Codex session-id mutators validate IDs and generated fork shell commands are shell-quoted; settings preserve `[fork]` on save; and real-binary fork evals now fail on tool fork errors instead of only checking worktree creation.
 
+### Fixed
+
+- `verify-session-persistence.sh` now degrades truthfully on macOS/non-systemd
+  hosts: scenarios 3/4 `[SKIP]` instead of false `[FAIL]` when claude argv is
+  unobservable, scenario 5 resolves its tmux name via `session show --json`, and
+  the harness cleans up its own tempdir. Gated by new macOS + Linux unit tests.
+
 ## [1.9.49] - 2026-06-07
 
 ### Added
