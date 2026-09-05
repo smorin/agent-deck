@@ -1,6 +1,6 @@
 ---
 name: agent-deck
-description: Manage agent-deck terminal sessions for AI coding agents from the CLI or TUI. Use when the user names agent-deck, or asks to create, start, stop, fork, or get output from an agent-deck session, attach MCPs to one, or launch a sub-agent in one. Not for Claude Code session recaps, handoffs, or listings (session-recap, session-handoff, session-agent-list).
+description: Manage agent-deck terminal sessions for AI coding agents from the CLI or TUI. Use when the user names agent-deck, or asks to create, start, stop, restart, fork, or get output from an agent-deck session, attach MCPs to one, detach MCPs from one, or launch a sub-agent in one. Not for Claude Code session recaps, handoffs, or listings (session-recap, session-handoff, session-agent-list).
 metadata:
   compatibility: "claude, opencode"
 ---
