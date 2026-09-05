@@ -1,6 +1,6 @@
 ---
 name: agent-deck
-description: Terminal session manager for AI coding agents. Use when user mentions "agent-deck", "session", "sub-agent", "MCP attach", "git worktree", or needs to (1) create/start/stop/restart/fork sessions, (2) attach/detach MCPs, (3) manage groups/profiles, (4) get session output, (5) configure agent-deck, (6) troubleshoot issues, (7) launch sub-agents, or (8) create/manage worktree sessions. Covers CLI commands, TUI shortcuts, config.toml options, and automation.
+description: Manage agent-deck terminal sessions for AI coding agents from the CLI or TUI. Use when the user names agent-deck, or asks to create, start, stop, fork, or get output from an agent-deck session, attach MCPs to one, or launch a sub-agent in one. Not for Claude Code session recaps, handoffs, or listings (session-recap, session-handoff, session-agent-list).
 metadata:
   compatibility: "claude, opencode"
 ---
